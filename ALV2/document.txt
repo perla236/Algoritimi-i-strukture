@@ -1,0 +1,17 @@
+1.Uspoređujući vrijeme potrebno za kreiranje niza i povezanog popisa te vrijeme potrebno za sekvencijalno pretraživanje, vjerojatno će se uočiti da je vrijeme potrebno za stvaranje povezanog popisa duže od vremena potrebnog za stvaranje niza, ali vrijeme potrebno za pretraživanje povezanog popisa je kraće od vremena potrebnog za pretraživanje niza.
+
+
+
+2.Najveći mogući broj elemenata N ovisi o nekoliko čimbenika, poput dostupne količine RAM-a i veličine podataka koju svaki element u nizu zauzima. Na primjer, ako koristite tip podataka int (obično 4 bajta), a imate 8 GB RAM-a, možete stvoriti niz s oko 2 milijarde elemenata (2^31 - 1). S druge strane, veličina povezanog popisa ovisi o količini dostupne memorije i veličini čvora u popisu.
+
+Međutim, treba imati na umu da veliki nizovi i povezani popisi mogu zahtijevati veliku količinu memorije i mogu usporiti program. Stoga bi trebalo razmotriti alternativne strategije ako se radi o velikim skupovima podataka, poput korištenja distribuiranih sustava ili baza podataka.
+
+
+1.Ovaj kod generira povezani popis sve dok se ne dođe do granice maksimalnog dostupnog memorije na računalu. Zatim ispisuje broj elemenata povezanog popisa koji se može raditi na računalu.
+
+Ovisno o specifikaciji računala, veličina memorije koju računalo može koristiti može se razlikovati i to je jedan od glavnih faktora koji određuju najveći mogući broj elemenata N povezanog popisa s kojim se može raditi na računalu. Također, ovisi o tome koliko memorije zauzima svaki čvor povezanog popisa i koliko memorije ostaje za ostale procese u računalu.
+
+
+
+
+zadatak a) Algoritam binarnog pretraživanja temelji se na pretpostavci da je polje sortirano po ključu, što nije slučaj kod povezanog popisa. Stoga, ne možemo primijeniti binarno pretraživanje na povezanom popisu jer bi bilo vrlo neefikasno. Umjesto toga koristi sekvencijalno pretraživanje.
