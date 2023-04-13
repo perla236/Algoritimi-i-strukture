@@ -1,0 +1,73 @@
+Zadatak 1.
+Pretpostavite da je T binarno stablo prikazano statički u memoriji pomoću matrice
+s tri stupca (0 je vrijednost koja znači da nema nasljednika):
+Redni broj, X, LIJEVI, DESNI.
+1. 90 5. 2.
+2. 30 8. 13.
+3. 40 0 0
+4. 50 0 0
+5. 60 9. 6.
+6. 70 0 7.
+7. 80 0 0
+8. 20 0 0
+9. 10 10. 14.
+10. 65 0 0
+11. 35 0 12.
+12. 45 3. 4.
+13. 55 11. 0
+14. 95 0 0
+
+
+90 nasljedjuje s lijeve 60 a s desne strane 30
+
+60 nasljedjuje s lijeve 10 a s desne strane 70
+
+30 nasljedjuje s lijeve 20 a s desne strane 55
+
+10 nasljedjuje s lijeve 65 a s desne strane 95
+
+70 nasljedjuje s lijeve 0 a s desne strane 80
+
+20 nasljedjuje s lijeve 0 a s desne strane 0
+
+55 nasljedjuje s lijeve 35 a s desne strane 0
+
+35 nasljedjuje s lijeve 0 a s desne strane 45
+
+45 nasljedjuje s lijeve 40 a s desne strane 50
+
+40 nasljedjuje s lijeve 0 a s desne strane 0
+
+50 nasljedjuje s lijeve 0 a s desne strane 0
+
+
+
+             90
+           /    \
+         60      30
+        /  \     / \
+      10   70  20  55
+     / \          /   
+    65  95       35   
+                   \
+                   45
+                  /  \
+                 40  50
+
+
+Stablo je binarno stablo, gdje svaki čvor ima najviše dva podstabla (lijevo i desno podstablo). U ovom konkretnom primjeru, korijen stabla je čvor sa vrijednošću 90, a listovi su čvorovi s vrijednostima 10, 20, 35, 40, 50, 55 i 95. Ostali čvorovi imaju vrijednost i nasljednike, i služe za povezivanje čvorova u stablo.
+
+
+
+
+
+
+2.Zadatak
+
+NDL, LND i LDN su oznake za tri različita načina obilaska binarnog stabla. NDL označava "Posjeti čvor, Desno podstablo, Lijevo podstablo", LND označava "Lijevo podstablo, Posjeti čvor, Desno podstablo", a LDN označava "Lijevo podstablo, Desno podstablo, Posjeti čvor".
+
+U NDL načinu obilaska, prvo se posjećuje čvor, a zatim se obilaze podstabla, počevši s desnim podstablom pa prelazeći na lijevo podstablo. U LND načinu obilaska, prvo se obilazi lijevo podstablo, zatim se posjećuje čvor, a nakon toga se obilazi desno podstablo. U LDN načinu obilaska, prvo se obilazi lijevo podstablo, zatim se obilazi desno podstablo, a na kraju se posjećuje čvor.
+
+Svaki način obilaska binarnog stabla koristi drugačiji redoslijed posjećivanja čvorova, što može biti korisno u različitim situacijama.
+
+

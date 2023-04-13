@@ -1,0 +1,16 @@
+Zadatak 3. Ograničenja prilikom računanja operacije povrh koristeći faktorijele su sljedeća:
+
+Mogućnost prekoračenja veličine broja (integer overflow) ako se faktorijeli ne izračunaju na ispravan način.
+Faktorijeli se brzo povećavaju s povećanjem vrijednosti n, što može dovesti do problema s performansama i memorijskom potrošnjom ako se obrađuju vrlo veliki brojevi.
+Zadatak 4. Računanje faktorijela je važan koncept u matematici i računarstvu, te se često koristi u raznim problemima i algoritmima. U zadacima 1 i 2, vidjeli smo kako se faktorijel može koristiti za rješavanje problema iz matematike i programiranja. Međutim, kao što smo vidjeli u zadatku 3, postoje i ograničenja i potencijalni problemi prilikom korištenja faktorijela u nekim kontekstima. Stoga, važno je pažljivo pristupiti rješavanju problema koji uključuju faktorijele i uvijek uzeti u obzir njihova ograničenja i potencijalne probleme.
+
+
+
+
+Don Perlutin
+koja metoda je brza 
+U zadatku 1 smo riješili problem povrh pomoću rekurzivne funkcije i stoga, a u zadatku 2 smo riješili isti problem koristeći stog implementiran kao povezani popis. Općenito govoreći, korištenje stoga ima tendenciju biti brže od rekurzivnog pristupa za rješavanje problema kao što je ovaj.
+
+Korištenje stoga često ima manji memorijski zahtjev i omogućuje da se problem riješi iterativno, što često ima manju vremensku složenost u odnosu na rekurzivno rješavanje problema. Stoga, u većini slučajeva kada se rješavaju problemi poput ovog, koristeći stog se može postići brže rješenje.
+
+Međutim, performanse ovise o mnogim faktorima, poput veličine problema, implementacije stoga i rekurzije, hardverskih karakteristika itd. Stoga, uvijek treba testirati različite pristupe i usporediti njihove performanse prije donošenja zaključka o brzini.
